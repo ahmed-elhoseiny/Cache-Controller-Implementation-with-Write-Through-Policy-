@@ -6,7 +6,7 @@ module Main_Memory #(
     input wire [$log2(DEPTH)-1:0] address;
     input wire                    write_en,  
 //    input wire                    read_en,    
-    input wire [WIDTH-1:0]        write_data, 4
+    input wire [WIDTH-1:0]        write_data,
 
     output wire [WIDTH-1:0]       read_data 
 );
