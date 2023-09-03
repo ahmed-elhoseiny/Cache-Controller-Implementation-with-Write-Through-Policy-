@@ -1,19 +1,19 @@
 module Main_Memory #(
     parameter WIDTH = 32,
-              DEPTH = 1024
+              DEPTH = 1024 
 ) (
-    input wire                    clk,reset,        
-    input wire [$clog2(DEPTH)-1:0] address,
-    input wire                    write_en,  
-    input wire                    read_en,    
-    input wire [WIDTH-1:0]        write_data,
+    input wire                      clk,reset,        
+    input wire [$clog2(DEPTH)-1:0]  address,
+    input wire                      write_en,  
+    input wire                      read_en,    
+    input wire [WIDTH-1:0]          write_data,
 
-    output wire                   ready, 
-    output reg [WIDTH-1:0]       read_data 
+    output reg                      ready, 
+    output reg [WIDTH*4-1:0]        read_data 
 );
     
 reg		[WIDTH-1:0] 	RAM		[0:DEPTH-1] ;
-reg    [3-1:0]        count;
+reg   [1:0] count;
 
 integer k ;
 always @(posedge clk or negedge reset) 
@@ -24,20 +24,23 @@ begin
         begin
             RAM[k] <= 'b0;
         end
-        count <= 3'b0;
-    end else if ((write_en || read_en)  && !(count == 3'd4)) 
-    begin
-        count <=  count + 1'd1;
-    end else if ((write_en ) && (count == 3'd4)) 
+        ready <= 1'b0;
+        count <= 2'd3;
+    end else if (!(read_en ) && (write_en))
     begin
         RAM[address] <= write_data;
-        count <= 3'b0;
-    end else if ((read_en ) && (count == 3'd4)) 
+        ready <= 1'b1;
+    end else if ((read_en ) && !(write_en) && !count==2'd0) 
     begin
-        read_data <= RAM[address];
-        count <= 3'b0;
+        read_data[WIDTH-1:0] <= RAM[{address[WIDTH-1:2],count}];
+        read_data <= read_data<<WIDTH;
+        count<= count - 2'd1;
+    end else if (count <= 1'b0)
+    begin
+        ready <= 1'b1;
+        count <= 2'd3;
+    end else begin
+        ready <= 1'b0;
     end
 end
-
-assign ready = ((count == 3'd4)) ? 1'b1 : 1'b0;
 endmodule

@@ -1,7 +1,5 @@
 module FSM(
     input   wire            mem_read,mem_write,ready,clk,reset,hit,
-//    input   wire    [4:0]   index_addr,
-//    input   wire    [2:0]   tag_addr,    // tag[2:0] --> block number
     output  reg             stall,main_read,main_write,refill,update
 );
 
@@ -53,7 +51,7 @@ always @(*)
             reading         :   begin
                                     if(hit == 1'b1)
                                     next_state = idle ;
-                                    else 
+                                    else
                                     next_state = main_mem_read ;
                                 end
 ///////////////////////////////////////////////////////////////////////
@@ -67,25 +65,25 @@ always @(*)
     ////////////////////// Writing ////////////////////////
     //////////////////////////////////////////////////////           
             writing         :   begin
-                                    if (hit == 1'b1)
-                                    next_state = write_through;
+                                    if (ready == 1'b1)
+                                    next_state = idle;
                                     else 
-                                    next_state = write_around;
+                                    next_state = writing;
                                 end
 ///////////////////////////////////////////////////////////////////////
-            write_through   :   begin
-                                    if (ready == 1'b1)
-                                    next_state = idle ;
-                                    else 
-                                    next_state = write_through ;
-                                end
-///////////////////////////////////////////////////////////////////////
-            write_around   :   begin
-                                    if (ready == 1'b1)
-                                    next_state = idle ;
-                                    else 
-                                    next_state = write_around ;
-                                end
+//             write_through   :   begin
+//                                     if (ready == 1'b1)
+//                                     next_state = idle ;
+//                                     else 
+//                                     next_state = write_through ;
+//                                 end
+// ///////////////////////////////////////////////////////////////////////
+//             write_around   :   begin
+//                                     if (ready == 1'b1)
+//                                     next_state = idle ;
+//                                     else 
+//                                     next_state = write_around ;
+//                                 end
 ///////////////////////////////////////////////////////////////////////
             default         :   begin
                                     next_state = idle;
@@ -132,39 +130,38 @@ begin
                                         refill      = 1'b0 ;
                                         update      = 1'b0 ;
                                     end
-                                 
                                 end
 ///////////////////////////////////////////////////////////////////////
             main_mem_read   :   begin
-                                    if (ready == 1'b1) begin
-                                    stall       = 1'b0 ;
-                                    main_read   = 1'b0 ;
-                                    main_write  = 1'b0 ;
-                                    refill      = 1'b0 ;
-                                    update      = 1'b0 ;
-                                end else 
-                                begin
                                     stall       = 1'b1 ;
-                                    main_read   = 1'b0 ;
+                                    main_read   = 1'b1 ;
                                     main_write  = 1'b0 ;
                                     refill      = 1'b0 ;
                                     update      = 1'b1 ;
-                                end
                                 end
     ///////////////////////////////////////////////////////
     ////////////////////// Writing ////////////////////////
     //////////////////////////////////////////////////////           
             writing         :   begin
-
+                                    stall       = 1'b1 ;
+                                    main_write  = 1'b1 ;
+                                    main_read   = 1'b0 ;
+                                    refill      = 1'b0 ;
+                                    if (hit == 1'b1) begin
+                                    update      = 1'b1 ;
+                                    end else 
+                                    begin
+                                    update      = 1'b0 ;
+                                    end
                                 end
 ///////////////////////////////////////////////////////////////////////
-            write_through   :   begin
+//             write_through   :   begin
 
-                                end
-///////////////////////////////////////////////////////////////////////
-            write_around   :   begin
+//                                 end
+// ///////////////////////////////////////////////////////////////////////
+//             write_around   :   begin
 
-                                end
+//                                 end
 ///////////////////////////////////////////////////////////////////////
             default         :   begin
                                     stall       = 1'b0 ;
@@ -176,8 +173,5 @@ begin
 ///////////////////////////////////////////////////////////////////////
         endcase
 end
-
-
-//////////////////////////////////////// MUX 32x1 ////////////////////////////////
 
 endmodule

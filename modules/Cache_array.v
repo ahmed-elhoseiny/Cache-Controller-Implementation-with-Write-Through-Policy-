@@ -25,9 +25,9 @@ always @(posedge clk or negedge reset) begin
  if (!reset) begin
     for ( k=0 ; k<=($clog2(DEPTH_Block)-1) ; k=k+1) 
         begin
-            CACHE[k] <= 'd0;
-            tag_cache <= 3'd0;
-            valid_cache[k] <= 1'b0;
+            CACHE[k]        <= 'd0;
+            tag_cache[k]    <= 3'd0;
+            valid_cache[k]  <= 1'b0;
         end
  end else if (update && !refill) begin  // update a full block in cache (read miss)
     CACHE[index] <= write_ablock;
