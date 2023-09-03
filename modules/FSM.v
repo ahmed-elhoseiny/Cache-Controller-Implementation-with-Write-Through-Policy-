@@ -1,7 +1,7 @@
 module FSM(
-    input   wire            mem_read,mem_write,ready,clk,reset,
-    input   wire    [4:0]   index,
-    input   wire    [3:0]   tag,    // tag[3] --> valid bit , tag[2:0] --> block number
+    input   wire            mem_read,mem_write,ready,clk,reset,hit,
+//    input   wire    [4:0]   index_addr,
+//    input   wire    [2:0]   tag_addr,    // tag[2:0] --> block number
     output  reg             stall,main_read,main_write,refill,update
 );
 
@@ -20,15 +20,18 @@ reg         [2:0]   current_state , next_state ;
     ////////////////////////////////////////////////////////////////////////////////////////
     ///////////////////////////////////// internals ////////////////////////////////////////
     ///////////////////////////////////////////////////////////////////////////////////////
-reg         [3:0]   tag_array   [0:32] ;    // tag[3] --> valid bit , tag[2:0] --> block number
-
+//reg         [2:0]   tag_cache   [0:31] ;    // tag[2:0] --> block number
+//reg                 valid_cache [0:31] ;    // valid array
 ////////////////////////////////////////////////////////////////////////////////////////////////
+
 always @(posedge clk or negedge reset)         
     begin
-            if(!reset)  
+            if(!reset) begin
                 current_state <= idle;
-            else
+            end  
+            else begin
                 current_state <= next_state;
+            end
     end
     /////////////////////////////////////////////////////////////////////////////////////////////
     ///////////////////////////////////// States transition /////////////////////////////////////
@@ -48,25 +51,40 @@ always @(*)
     ////////////////////// Reading ////////////////////////
     //////////////////////////////////////////////////////           
             reading         :   begin
-
+                                    if(hit == 1'b1)
+                                    next_state = idle ;
+                                    else 
+                                    next_state = main_mem_read ;
                                 end
 ///////////////////////////////////////////////////////////////////////
             main_mem_read   :   begin
-
+                                    if (ready == 1'b1)
+                                    next_state = reading ;
+                                    else 
+                                    next_state = main_mem_read ;
                                 end
     ///////////////////////////////////////////////////////
     ////////////////////// Writing ////////////////////////
     //////////////////////////////////////////////////////           
             writing         :   begin
-
+                                    if (hit == 1'b1)
+                                    next_state = write_through;
+                                    else 
+                                    next_state = write_around;
                                 end
 ///////////////////////////////////////////////////////////////////////
             write_through   :   begin
-
+                                    if (ready == 1'b1)
+                                    next_state = idle ;
+                                    else 
+                                    next_state = write_through ;
                                 end
 ///////////////////////////////////////////////////////////////////////
             write_around   :   begin
-
+                                    if (ready == 1'b1)
+                                    next_state = idle ;
+                                    else 
+                                    next_state = write_around ;
                                 end
 ///////////////////////////////////////////////////////////////////////
             default         :   begin
@@ -90,17 +108,48 @@ begin
 ///////////////////////////////////////////////////////////////////////
     case(current_state)
             idle            :   begin
-
+                                    stall       = 1'b0 ;
+                                    main_read   = 1'b0 ;
+                                    main_write  = 1'b0 ;
+                                    refill      = 1'b0 ;
+                                    update      = 1'b0 ;
                                 end
     ///////////////////////////////////////////////////////
     ////////////////////// Reading ////////////////////////
     //////////////////////////////////////////////////////           
             reading         :   begin
-
+                                    if (hit == 1'b1) begin
+                                        stall       = 1'b0 ;
+                                        main_read   = 1'b0 ;
+                                        main_write  = 1'b0 ;
+                                        refill      = 1'b1 ;
+                                        update      = 1'b1 ;    //  refill & update  = reading operation (11)
+                                    end else 
+                                    begin
+                                        stall       = 1'b1 ;
+                                        main_read   = 1'b0 ;
+                                        main_write  = 1'b0 ;
+                                        refill      = 1'b0 ;
+                                        update      = 1'b0 ;
+                                    end
+                                 
                                 end
 ///////////////////////////////////////////////////////////////////////
             main_mem_read   :   begin
-
+                                    if (ready == 1'b1) begin
+                                    stall       = 1'b0 ;
+                                    main_read   = 1'b0 ;
+                                    main_write  = 1'b0 ;
+                                    refill      = 1'b0 ;
+                                    update      = 1'b0 ;
+                                end else 
+                                begin
+                                    stall       = 1'b1 ;
+                                    main_read   = 1'b0 ;
+                                    main_write  = 1'b0 ;
+                                    refill      = 1'b0 ;
+                                    update      = 1'b1 ;
+                                end
                                 end
     ///////////////////////////////////////////////////////
     ////////////////////// Writing ////////////////////////
