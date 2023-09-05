@@ -3,6 +3,10 @@ K4
 z2
 Z0 !s99 nomlopt
 R0
+R0
+R0
+R0
+R0
 !s11f MIXED_VERSIONS
 13
 !s112 1.1
@@ -32,8 +36,19 @@ R3
 R4
 n@_opt1
 R5
+R1
+T_opt2
+!s110 1693941359
+VGe:1zcjn_=W2UY6n^ifjD2
+04 17 4 work Caching_system_tb fast 0
+=1-3c2c30c8ccb8-64f77e6f-30c-1324
+R2
+R3
+R4
+n@_opt2
+R5
 vCache_array
-Z6 !s110 1693770014
+Z6 !s110 1693941342
 !i10b 1
 !s100 DlSKSlM@DjUGJGb^IhW402
 I3V8beE=aQ>H`YHB6b=KoU2
@@ -41,16 +56,16 @@ R1
 w1693747535
 8./Cache_array.v
 F./Cache_array.v
-!i122 5
+!i122 10
 L0 1 55
 Z7 VDg1SIo80bB@j0V0VzS_@n1
 Z8 OL;L;2021.1;73
 r1
 !s85 0
 31
-Z9 !s108 1693770014.000000
-Z10 !s107 ./Main_Memory.v|./FSM.v|./Caching_system.v|./Cache_array.v|
-Z11 !s90 ./Cache_array.v|./Caching_system.v|./FSM.v|./Main_Memory.v|
+Z9 !s108 1693941342.000000
+Z10 !s107 ./Main_Memory.v|./FSM.v|./Caching_system_tb.v|./Caching_system.v|./Cache_array.v|
+Z11 !s90 ./Cache_array.v|./Caching_system.v|./Caching_system_tb.v|./FSM.v|./Main_Memory.v|
 !i113 0
 Z12 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R4
@@ -64,7 +79,7 @@ R1
 w1693770013
 8./Caching_system.v
 F./Caching_system.v
-!i122 5
+!i122 10
 L0 1 67
 R7
 R8
@@ -78,16 +93,39 @@ R11
 R12
 R4
 n@caching_system
+vCaching_system_tb
+R6
+!i10b 1
+!s100 =^IMGSnHoio`liY]?M<ma1
+ILA823U78oz`DQe=f3LcjJ1
+R1
+w1693940309
+8./Caching_system_tb.v
+F./Caching_system_tb.v
+!i122 10
+L0 2 72
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R4
+n@caching_system_tb
 vFSM
 R6
 !i10b 1
-!s100 hihMgfI?CYW>DzRoiM4bL0
-IjjCLGUB[i:Z:jZMB8zM<k3
+!s100 kc:72F=YWIh1VE7T@:IzA1
+INjSf;`GmmJ[9ni2_DOQ=d1
 R1
 w1693768954
 8./FSM.v
 F./FSM.v
-!i122 5
+!i122 10
 L0 1 177
 R7
 R8
@@ -104,14 +142,14 @@ n@f@s@m
 vMain_Memory
 R6
 !i10b 1
-!s100 DPFG[AjK?8HAol1=84V_m0
-I2Af7:26RSN>;GQ^JngFEk3
+!s100 I<8hziaT6B`L@`?QzWJSA2
+I:bFLEbDaBO>WAFf;?;4OX1
 R1
-w1693769924
+w1693941338
 8./Main_Memory.v
 F./Main_Memory.v
-!i122 5
-L0 1 46
+!i122 10
+L0 1 54
 R7
 R8
 r1

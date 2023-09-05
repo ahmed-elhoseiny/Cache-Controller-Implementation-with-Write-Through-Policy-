@@ -13,7 +13,7 @@ module Main_Memory #(
 );
     
 reg		[WIDTH-1:0] 	RAM		[0:DEPTH-1] ;
-reg   [1:0] count;
+reg   [1:0] count;z
 
 integer k ;
 always @(posedge clk or negedge reset) 
