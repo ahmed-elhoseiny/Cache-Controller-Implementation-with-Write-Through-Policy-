@@ -32,9 +32,8 @@ begin
         ready <= 1'b1;
     end else if ((read_en ) && !(write_en) && !count==2'd0) 
     begin
-        read_data[WIDTH-1:0] <= RAM[{address[$clog2(DEPTH)-1:2],count}];
-        read_data <= read_data<<WIDTH;
-        count<= count - 2'd1;
+        read_data <= {read_data[WIDTH*4-1:WIDTH],RAM[{address[$clog2(DEPTH)-1:2],count}]};
+        count <= count - 2'd1;
     end else if (count == 2'b0)
     begin
         ready <= 1'b1;
