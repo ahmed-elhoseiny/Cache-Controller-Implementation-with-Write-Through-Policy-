@@ -23,7 +23,7 @@ module Cache_array #(
     integer k;
 always @(posedge clk or negedge reset) begin
  if (!reset) begin
-    for ( k=0 ; k<=($clog2(DEPTH_Block)-1) ; k=k+1) 
+    for ( k=0 ; k<=(DEPTH_Block-1) ; k=k+1)
         begin
             CACHE[k]        <= 'd0;
             tag_cache[k]    <= 3'd0;

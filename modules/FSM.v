@@ -159,12 +159,12 @@ begin
                                     end
                                     stall       = 1'b1 ;
                                     main_read   = 1'b0 ;
-                                    refill      = 1'b0 ;
+                                    update      = 1'b0 ;
                                     if (hit == 1'b1) begin
-                                    update      = 1'b1 ;
+                                    refill      = 1'b1 ;
                                     end else 
                                     begin
-                                    update      = 1'b0 ;
+                                    refill      = 1'b0 ;
                                     end
                                 end
 ///////////////////////////////////////////////////////////////////////

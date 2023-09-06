@@ -8,7 +8,7 @@ add wave -noupdate -color Gold -itemcolor Gold -radix binary /Caching_system_tb/
 add wave -noupdate -color Gold -itemcolor Gold -radix binary /Caching_system_tb/DUT/Caching_controller/current_state
 add wave -noupdate -color Gold -itemcolor Gold -radix binary /Caching_system_tb/DUT/Caching_controller/next_state
 add wave -noupdate -color Coral -itemcolor Coral -radix decimal /Caching_system_tb/DUT/Cache/write_data
-add wave -noupdate -color Coral -itemcolor Coral -radix decimal /Caching_system_tb/DUT/Cache/write_ablock
+add wave -noupdate -color Coral -itemcolor Coral -radix hexadecimal /Caching_system_tb/DUT/Cache/write_ablock
 add wave -noupdate -color Coral -itemcolor Coral -radix binary /Caching_system_tb/DUT/Cache/index
 add wave -noupdate -color Coral -itemcolor Coral -radix binary /Caching_system_tb/DUT/Cache/tag
 add wave -noupdate -color Coral -itemcolor Coral -radix binary /Caching_system_tb/DUT/Cache/offset
@@ -22,16 +22,16 @@ add wave -noupdate -radix binary /Caching_system_tb/DUT/Main_Memory_U0/write_en
 add wave -noupdate -radix binary /Caching_system_tb/DUT/Main_Memory_U0/read_en
 add wave -noupdate -radix decimal /Caching_system_tb/DUT/Main_Memory_U0/write_data
 add wave -noupdate -radix binary /Caching_system_tb/DUT/Main_Memory_U0/ready
-add wave -noupdate -radix decimal /Caching_system_tb/DUT/Main_Memory_U0/read_data
+add wave -noupdate -radix hexadecimal /Caching_system_tb/DUT/Main_Memory_U0/read_data
 add wave -noupdate -radix binary /Caching_system_tb/DUT/Main_Memory_U0/count
 add wave -noupdate -radix binary /Caching_system_tb/DUT/Main_Memory_U0/k
 add wave -noupdate -color Magenta -itemcolor Magenta /Caching_system_tb/DataIn_tb
-add wave -noupdate -color Magenta -itemcolor Magenta /Caching_system_tb/DataOut_tb
+add wave -noupdate -color Magenta -itemcolor Magenta -radix hexadecimal /Caching_system_tb/DataOut_tb
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {229590 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 381
-configure wave -valuecolwidth 100
+configure wave -valuecolwidth 226
 configure wave -justifyvalue left
 configure wave -signalnamewidth 0
 configure wave -snapdistance 10
@@ -44,4 +44,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ps} {415744 ps}
+WaveRestoreZoom {265044 ps} {628768 ps}

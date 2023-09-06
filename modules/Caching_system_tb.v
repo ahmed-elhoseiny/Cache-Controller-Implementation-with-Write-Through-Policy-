@@ -38,15 +38,18 @@ always #(Clk_period/2) clk_tb = ~clk_tb ;
 
     ///////////Use the monitor task to display///////////////
 
-    $monitor("time=%t \t mem_read=%b \t mem_write=%b \t WordAddress=%b \t DataIn=%d \t stall=%b \t DataOut=%d", 
-    $time,mem_read_tb,mem_write_tb,WordAddress_tb,DataIn_tb,stall_tb,DataOut_tb);
+    $monitor("time=%t \t WordAddress=%b \t DataIn=%d \t stall=%b \t DataOut=%d",
+    $time,WordAddress_tb,DataIn_tb,stall_tb,DataOut_tb);
 
     ///////////Reset//////////////////////////
     clk_tb      = 1'b1 ;
     reset_tb    = 1'b0;
-  #(Clk_period*10)
+  #(Clk_period*2)
     reset_tb    = 1'b1;
     //////////////////////////////////////////
+    $readmemh ("Main_mem_data_h.txt",DUT.Main_Memory_U0.RAM);
+    #(Clk_period*1)
+    /////////////// Write miss ////////////////////////
     WordAddress_tb  = 10'b0000000001 ;
     DataIn_tb       = 32'd5 ;
     mem_read_tb     = 1'b0 ;
@@ -54,6 +57,7 @@ always #(Clk_period/2) clk_tb = ~clk_tb ;
   #(Clk_period*1)
   mem_write_tb    = 1'b0 ;
   #(Clk_period*2)
+  //////////////// read miss ///////////////////////////////
     WordAddress_tb  = 10'b0000000001 ;
     // DataIn_tb       = 32'd5 ;
     mem_read_tb     = 1'b1 ;
@@ -61,16 +65,23 @@ always #(Clk_period/2) clk_tb = ~clk_tb ;
   #(Clk_period*1)
     mem_read_tb     = 1'b0 ;
   #(Clk_period*8)
-  //   WordAddress_tb  = 10'b0000000100 ;
-  //   // DataIn_tb       = 32'd5 ;
-  //   mem_read_tb     = 1'b1 ;
-  //   mem_write_tb    = 1'b0 ;
-  // #(Clk_period*7)
-  //   WordAddress_tb  = 10'b0000000011 ;
-  //   DataIn_tb       = 32'd10 ;
-  //   mem_read_tb     = 1'b0 ;
-  //   mem_write_tb    = 1'b1 ;
-  // #(Clk_period*3)
+  ////////////// read Hit /////////////////////////////
+    WordAddress_tb  = 10'b0000000011 ;
+    // DataIn_tb       = 32'd5 ;
+    mem_read_tb     = 1'b1 ;
+    mem_write_tb    = 1'b0 ;
+  #(Clk_period*1)
+    mem_read_tb     = 1'b0 ;
+  #(Clk_period*8)
+  /////////////// Write Hit ////////////////////////
+    WordAddress_tb  = 10'b0000000001 ;
+    DataIn_tb       = 32'd15 ;
+    mem_read_tb     = 1'b0 ;
+    mem_write_tb    = 1'b1 ;
+  #(Clk_period*1)
+  mem_write_tb    = 1'b0 ;
+  #(Clk_period*2)
+  ////////////////////////////////////////////////////
   $finish ;
 
     end
