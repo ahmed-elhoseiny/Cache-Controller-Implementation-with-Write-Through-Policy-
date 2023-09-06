@@ -25,8 +25,10 @@ add wave -noupdate -radix binary /Caching_system_tb/DUT/Main_Memory_U0/ready
 add wave -noupdate -radix decimal /Caching_system_tb/DUT/Main_Memory_U0/read_data
 add wave -noupdate -radix binary /Caching_system_tb/DUT/Main_Memory_U0/count
 add wave -noupdate -radix binary /Caching_system_tb/DUT/Main_Memory_U0/k
+add wave -noupdate -color Magenta -itemcolor Magenta /Caching_system_tb/DataIn_tb
+add wave -noupdate -color Magenta -itemcolor Magenta /Caching_system_tb/DataOut_tb
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {210186 ps} 0}
+WaveRestoreCursors {{Cursor 1} {229590 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 381
 configure wave -valuecolwidth 100
@@ -42,4 +44,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {45044 ps} {460788 ps}
+WaveRestoreZoom {0 ps} {415744 ps}

@@ -44,29 +44,33 @@ always #(Clk_period/2) clk_tb = ~clk_tb ;
     ///////////Reset//////////////////////////
     clk_tb      = 1'b1 ;
     reset_tb    = 1'b0;
-  #(Clk_period*2)
+  #(Clk_period*10)
     reset_tb    = 1'b1;
     //////////////////////////////////////////
     WordAddress_tb  = 10'b0000000001 ;
     DataIn_tb       = 32'd5 ;
     mem_read_tb     = 1'b0 ;
     mem_write_tb    = 1'b1 ;
-  #(Clk_period*3)
+  #(Clk_period*1)
+  mem_write_tb    = 1'b0 ;
+  #(Clk_period*2)
     WordAddress_tb  = 10'b0000000001 ;
     // DataIn_tb       = 32'd5 ;
     mem_read_tb     = 1'b1 ;
     mem_write_tb    = 1'b0 ;
-  #(Clk_period*7)
-    WordAddress_tb  = 10'b0000000100 ;
-    // DataIn_tb       = 32'd5 ;
-    mem_read_tb     = 1'b1 ;
-    mem_write_tb    = 1'b0 ;
-  #(Clk_period*7)
-    WordAddress_tb  = 10'b0000000011 ;
-    DataIn_tb       = 32'd10 ;
+  #(Clk_period*1)
     mem_read_tb     = 1'b0 ;
-    mem_write_tb    = 1'b1 ;
-  #(Clk_period*3)
+  #(Clk_period*8)
+  //   WordAddress_tb  = 10'b0000000100 ;
+  //   // DataIn_tb       = 32'd5 ;
+  //   mem_read_tb     = 1'b1 ;
+  //   mem_write_tb    = 1'b0 ;
+  // #(Clk_period*7)
+  //   WordAddress_tb  = 10'b0000000011 ;
+  //   DataIn_tb       = 32'd10 ;
+  //   mem_read_tb     = 1'b0 ;
+  //   mem_write_tb    = 1'b1 ;
+  // #(Clk_period*3)
   $finish ;
 
     end

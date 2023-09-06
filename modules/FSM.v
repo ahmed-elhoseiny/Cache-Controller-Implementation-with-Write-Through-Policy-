@@ -134,17 +134,30 @@ begin
 ///////////////////////////////////////////////////////////////////////
             main_mem_read   :   begin
                                     stall       = 1'b1 ;
-                                    main_read   = 1'b1 ;
                                     main_write  = 1'b0 ;
                                     refill      = 1'b0 ;
+                                    if (ready == 1'b1)
+                                    begin
                                     update      = 1'b1 ;
+                                    main_read   = 1'b0 ;
+                                    end
+                                    else 
+                                    begin
+                                    update      = 1'b0 ;
+                                    main_read   = 1'b1 ;
+                                    end
                                 end
     ///////////////////////////////////////////////////////
     ////////////////////// Writing ////////////////////////
     //////////////////////////////////////////////////////           
             writing         :   begin
-                                    stall       = 1'b1 ;
+                                    if (ready == 1'b1) begin
+                                    main_write  = 1'b0 ;
+                                    end else 
+                                    begin
                                     main_write  = 1'b1 ;
+                                    end
+                                    stall       = 1'b1 ;
                                     main_read   = 1'b0 ;
                                     refill      = 1'b0 ;
                                     if (hit == 1'b1) begin
