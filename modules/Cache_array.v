@@ -35,10 +35,10 @@ always @(posedge clk or negedge reset) begin
     tag_cache[index] <= tag;
  end else if (!update && refill) begin  // refill just only one word in a block (write hit)
  case (offset)
-    2'b00: CACHE[index][WIDTH-1:0] <= write_data;
-    2'b01: CACHE[index][WIDTH*2-1:WIDTH] <= write_data;
-    2'b10: CACHE[index][WIDTH*3-1:WIDTH*2] <= write_data;
-    2'b11: CACHE[index][WIDTH*4-1:WIDTH*3] <= write_data;
+    2'b00: CACHE[index][WIDTH-1:0]          <= write_data;
+    2'b01: CACHE[index][WIDTH*2-1:WIDTH]    <= write_data;
+    2'b10: CACHE[index][WIDTH*3-1:WIDTH*2]  <= write_data;
+    2'b11: CACHE[index][WIDTH*4-1:WIDTH*3]  <= write_data;
  endcase
  end else if (update && refill) begin  // read operation (read hit)
     case (offset)

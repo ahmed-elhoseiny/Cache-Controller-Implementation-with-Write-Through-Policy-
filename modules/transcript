@@ -1,0 +1,103 @@
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim work.Caching_system_tb -voptargs="+acc=lprn" 
+# Start time: 17:49:22 on Sep 09,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.Caching_system_tb(fast)
+# Loading work.Caching_system(fast)
+# Loading work.FSM(fast)
+# Loading work.Cache_array(fast)
+# Loading work.Main_Memory(fast)
+do F:/study/ITI/Verilog/project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules/wave.do
+run -all
+# time=                   0 	 WordAddress=xxx 	 DataIn=xxxxxxxx 	 stall=0 	 DataOut=xxxxxxxx
+# time=               60000 	 WordAddress=000 	 DataIn=00000005 	 stall=0 	 DataOut=xxxxxxxx
+# time=               80000 	 WordAddress=000 	 DataIn=00000005 	 stall=1 	 DataOut=xxxxxxxx
+# status Test case 1 succed
+# time=              120000 	 WordAddress=001 	 DataIn=00000015 	 stall=0 	 DataOut=xxxxxxxx
+# time=              140000 	 WordAddress=001 	 DataIn=00000015 	 stall=1 	 DataOut=xxxxxxxx
+# status Test case 2 succed
+# time=              180000 	 WordAddress=002 	 DataIn=00000025 	 stall=0 	 DataOut=xxxxxxxx
+# time=              200000 	 WordAddress=002 	 DataIn=00000025 	 stall=1 	 DataOut=xxxxxxxx
+# status Test case 3 succed
+# time=              240000 	 WordAddress=003 	 DataIn=00000035 	 stall=0 	 DataOut=xxxxxxxx
+# time=              260000 	 WordAddress=003 	 DataIn=00000035 	 stall=1 	 DataOut=xxxxxxxx
+# status Test case 4 succed
+# time=              300000 	 WordAddress=3ff 	 DataIn=00005c79 	 stall=0 	 DataOut=xxxxxxxx
+# time=              320000 	 WordAddress=3ff 	 DataIn=00005c79 	 stall=1 	 DataOut=xxxxxxxx
+# status Test case 5 succed
+# time=              360000 	 WordAddress=3ff 	 DataIn=00005c79 	 stall=0 	 DataOut=xxxxxxxx
+# time=              380000 	 WordAddress=3ff 	 DataIn=00005c79 	 stall=1 	 DataOut=xxxxxxxx
+# time=              480000 	 WordAddress=3ff 	 DataIn=00005c79 	 stall=0 	 DataOut=xxxxxxxx
+# time=              520000 	 WordAddress=3ff 	 DataIn=00005c79 	 stall=0 	 DataOut=00005c79
+# status Test case 6 succed
+# time=              540000 	 WordAddress=001 	 DataIn=00005c79 	 stall=0 	 DataOut=00005c79
+# time=              560000 	 WordAddress=001 	 DataIn=00005c79 	 stall=1 	 DataOut=00005c79
+# time=              660000 	 WordAddress=001 	 DataIn=00005c79 	 stall=0 	 DataOut=00005c79
+# time=              700000 	 WordAddress=001 	 DataIn=00005c79 	 stall=0 	 DataOut=00000015
+# status Test case 7 succed
+# time=              720000 	 WordAddress=000 	 DataIn=00005c79 	 stall=0 	 DataOut=00000015
+# time=              760000 	 WordAddress=000 	 DataIn=00005c79 	 stall=0 	 DataOut=00000005
+# status Test case 8 succed
+# time=              780000 	 WordAddress=001 	 DataIn=00005c79 	 stall=0 	 DataOut=00000005
+# time=              820000 	 WordAddress=001 	 DataIn=00005c79 	 stall=0 	 DataOut=00000015
+# status Test case 9 succed
+# time=              840000 	 WordAddress=002 	 DataIn=00005c79 	 stall=0 	 DataOut=00000015
+# time=              880000 	 WordAddress=002 	 DataIn=00005c79 	 stall=0 	 DataOut=00000025
+# status Test case 10 succed
+# time=              900000 	 WordAddress=003 	 DataIn=00005c79 	 stall=0 	 DataOut=00000025
+# time=              940000 	 WordAddress=003 	 DataIn=00005c79 	 stall=0 	 DataOut=00000035
+# status Test case 11 succed
+# time=              960000 	 WordAddress=020 	 DataIn=00005c79 	 stall=0 	 DataOut=00000035
+# time=              980000 	 WordAddress=020 	 DataIn=00005c79 	 stall=1 	 DataOut=00000035
+# time=             1080000 	 WordAddress=020 	 DataIn=00005c79 	 stall=0 	 DataOut=00000035
+# time=             1120000 	 WordAddress=020 	 DataIn=00005c79 	 stall=0 	 DataOut=00000020
+# status Test case 12 succed
+# time=             1140000 	 WordAddress=040 	 DataIn=00005c79 	 stall=0 	 DataOut=00000020
+# time=             1160000 	 WordAddress=040 	 DataIn=00005c79 	 stall=1 	 DataOut=00000020
+# time=             1260000 	 WordAddress=040 	 DataIn=00005c79 	 stall=0 	 DataOut=00000020
+# time=             1300000 	 WordAddress=040 	 DataIn=00005c79 	 stall=0 	 DataOut=00000040
+# status Test case 13 succed
+# time=             1320000 	 WordAddress=060 	 DataIn=00005c79 	 stall=0 	 DataOut=00000040
+# time=             1340000 	 WordAddress=060 	 DataIn=00005c79 	 stall=1 	 DataOut=00000040
+# time=             1440000 	 WordAddress=060 	 DataIn=00005c79 	 stall=0 	 DataOut=00000040
+# time=             1480000 	 WordAddress=060 	 DataIn=00005c79 	 stall=0 	 DataOut=00000060
+# status Test case 14 succed
+# time=             1500000 	 WordAddress=00a 	 DataIn=00005c79 	 stall=0 	 DataOut=00000060
+# time=             1520000 	 WordAddress=00a 	 DataIn=00005c79 	 stall=1 	 DataOut=00000060
+# time=             1620000 	 WordAddress=00a 	 DataIn=00005c79 	 stall=0 	 DataOut=00000060
+# time=             1660000 	 WordAddress=00a 	 DataIn=00005c79 	 stall=0 	 DataOut=0000000a
+# status Test case 15 succed
+# time=             1680000 	 WordAddress=008 	 DataIn=00000011 	 stall=0 	 DataOut=0000000a
+# time=             1700000 	 WordAddress=008 	 DataIn=00000011 	 stall=1 	 DataOut=0000000a
+# status Test case 16 succed
+# time=             1740000 	 WordAddress=009 	 DataIn=00000022 	 stall=0 	 DataOut=0000000a
+# time=             1760000 	 WordAddress=009 	 DataIn=00000022 	 stall=1 	 DataOut=0000000a
+# status Test case 17 succed
+# time=             1800000 	 WordAddress=00a 	 DataIn=00000033 	 stall=0 	 DataOut=0000000a
+# time=             1820000 	 WordAddress=00a 	 DataIn=00000033 	 stall=1 	 DataOut=0000000a
+# status Test case 18 succed
+# time=             1860000 	 WordAddress=00b 	 DataIn=00000044 	 stall=0 	 DataOut=0000000a
+# time=             1880000 	 WordAddress=00b 	 DataIn=00000044 	 stall=1 	 DataOut=0000000a
+# status Test case 19 succed
+# time=             1920000 	 WordAddress=060 	 DataIn=00000000 	 stall=0 	 DataOut=0000000a
+# time=             1940000 	 WordAddress=060 	 DataIn=00000000 	 stall=1 	 DataOut=0000000a
+# status Test case 20 succed
+# ** Note: $finish    : ./Caching_system_tb.v(228)
+#    Time: 1980 ns  Iteration: 0  Instance: /Caching_system_tb
+# 1
+# Break in Module Caching_system_tb at ./Caching_system_tb.v line 228
+# End time: 17:51:32 on Sep 09,2023, Elapsed time: 0:02:10
+# Errors: 0, Warnings: 0

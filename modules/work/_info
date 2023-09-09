@@ -1,0 +1,149 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dF:/study/ITI/Verilog/project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules
+T_opt
+!s110 1694270962
+V=GTDlh2UnKE8`?HbaihzY0
+04 17 4 work Caching_system_tb fast 0
+=1-3c2c30c8ccb8-64fc85f2-1e5-6404
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc=lprn
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vCache_array
+Z3 !s110 1694270945
+!i10b 1
+!s100 mUc<3Y;JMUhjaN;=Ga=Z00
+IW_h;3e1]N8l0E_5RbnE^T3
+R1
+w1694269822
+8./Cache_array.v
+F./Cache_array.v
+!i122 12
+L0 1 55
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z6 !s108 1694270945.000000
+Z7 !s107 ./Main_Memory.v|./FSM.v|./Caching_system_tb.v|./Caching_system.v|./Cache_array.v|
+Z8 !s90 ./Cache_array.v|./Caching_system.v|./Caching_system_tb.v|./FSM.v|./Main_Memory.v|
+!i113 0
+Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@cache_array
+vCaching_system
+R3
+!i10b 1
+!s100 kO>L_?bzeaVY15a:T2PF80
+Ilb_4Q>NzGkR]_4^KnZQeY3
+R1
+w1693770013
+8./Caching_system.v
+F./Caching_system.v
+!i122 12
+L0 1 67
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R2
+n@caching_system
+vCaching_system_tb
+Z10 !s110 1694270946
+!i10b 1
+!s100 X37Ii`3fUDiUZJmXbdN_@3
+IXC?9jWbod>mVY86ZejNSY1
+R1
+w1694270626
+8./Caching_system_tb.v
+F./Caching_system_tb.v
+!i122 12
+L0 2 230
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R2
+n@caching_system_tb
+vFSM
+R10
+!i10b 1
+!s100 Bc=L3[W?`Ni6RLK[9B0ea3
+I5[k3ZL@dD]JGoQ0lZfWiR3
+R1
+w1694270828
+8./FSM.v
+F./FSM.v
+!i122 12
+L0 1 191
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R2
+n@f@s@m
+vMain_Memory
+R10
+!i10b 1
+!s100 Jfk=]6nX0fh4;a6DkGk?L3
+Iz`@KGfPTaRWAKGo0Qnj@F3
+R1
+w1694267637
+8./Main_Memory.v
+F./Main_Memory.v
+!i122 12
+L0 1 46
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R2
+n@main_@memory

@@ -17,7 +17,7 @@ add wave -noupdate -color Coral -itemcolor Coral -radix binary /Caching_system_t
 add wave -noupdate -color Coral -itemcolor Coral -radix binary /Caching_system_tb/DUT/Cache/hit
 add wave -noupdate -color Coral -itemcolor Coral -radix decimal /Caching_system_tb/DUT/Cache/read_data
 add wave -noupdate -color Coral -itemcolor Coral -radix decimal /Caching_system_tb/DUT/Cache/k
-add wave -noupdate -radix binary /Caching_system_tb/DUT/Main_Memory_U0/address
+add wave -noupdate -radix hexadecimal /Caching_system_tb/DUT/Main_Memory_U0/address
 add wave -noupdate -radix binary /Caching_system_tb/DUT/Main_Memory_U0/write_en
 add wave -noupdate -radix binary /Caching_system_tb/DUT/Main_Memory_U0/read_en
 add wave -noupdate -radix decimal /Caching_system_tb/DUT/Main_Memory_U0/write_data
@@ -28,7 +28,7 @@ add wave -noupdate -radix binary /Caching_system_tb/DUT/Main_Memory_U0/k
 add wave -noupdate -color Magenta -itemcolor Magenta /Caching_system_tb/DataIn_tb
 add wave -noupdate -color Magenta -itemcolor Magenta -radix hexadecimal /Caching_system_tb/DataOut_tb
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {229590 ps} 0}
+WaveRestoreCursors {{Cursor 1} {720000 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 381
 configure wave -valuecolwidth 226
@@ -44,4 +44,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {265044 ps} {628768 ps}
+WaveRestoreZoom {414463 ps} {778187 ps}
