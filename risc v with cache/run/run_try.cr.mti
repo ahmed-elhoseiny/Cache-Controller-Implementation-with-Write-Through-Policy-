@@ -1,0 +1,120 @@
+{E:/courses/ITI/Verilog project/risc v with cache/ALU.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/ALU.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {E:/courses/ITI/Verilog project/risc v with cache/Data_Memory.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/Data_Memory.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Data_Memory
+
+Top level modules:
+	Data_Memory
+
+} {} {}} {E:/courses/ITI/Verilog project/risc v with cache/Register_File.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/Register_File.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Register_File
+
+Top level modules:
+	Register_File
+
+} {} {}} {E:/courses/ITI/Verilog project/risc v with cache/Main_Memory.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/Main_Memory.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Main_Memory
+
+Top level modules:
+	Main_Memory
+
+} {} {}} {E:/courses/ITI/Verilog project/risc v with cache/MUX_2_to_1 .v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/MUX_2_to_1 .v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MUX_2_to_1
+
+Top level modules:
+	MUX_2_to_1
+
+} {} {}} {E:/courses/ITI/Verilog project/risc v with cache/ALU_Decoder.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/ALU_Decoder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALU_Decoder
+
+Top level modules:
+	ALU_Decoder
+
+} {} {}} {E:/courses/ITI/Verilog project/risc v with cache/RISC_V_TOP.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/RISC_V_TOP.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RISC_V_TOP
+
+Top level modules:
+	RISC_V_TOP
+
+} {} {}} {E:/courses/ITI/Verilog project/risc v with cache/Sign_Extend.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/Sign_Extend.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Sign_Extend
+
+Top level modules:
+	Sign_Extend
+
+} {} {}} {E:/courses/ITI/Verilog project/risc v with cache/Adder.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/Adder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}} {E:/courses/ITI/Verilog project/risc v with cache/Control_Unit.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/Control_Unit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Control_Unit
+
+Top level modules:
+	Control_Unit
+
+} {} {}} {E:/courses/ITI/Verilog project/risc v with cache/Caching_system.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/Caching_system.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Caching_system
+
+Top level modules:
+	Caching_system
+
+} {} {}} {E:/courses/ITI/Verilog project/risc v with cache/Main_Decoder.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/Main_Decoder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Main_Decoder
+
+Top level modules:
+	Main_Decoder
+
+} {} {}} {E:/courses/ITI/Verilog project/risc v with cache/Instruction_Memory.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/Instruction_Memory.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Instruction_Memory
+
+Top level modules:
+	Instruction_Memory
+
+} {} {}} {E:/courses/ITI/Verilog project/risc v with cache/RICS_V_tb.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/RICS_V_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RICS_V_tb
+
+Top level modules:
+	RICS_V_tb
+
+} {} {}} {E:/courses/ITI/Verilog project/risc v with cache/FSM.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/FSM.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FSM
+
+Top level modules:
+	FSM
+
+} {} {}} {E:/courses/ITI/Verilog project/risc v with cache/MUX_4_to_1.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/MUX_4_to_1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MUX_4_to_1
+
+Top level modules:
+	MUX_4_to_1
+
+} {} {}} {E:/courses/ITI/Verilog project/risc v with cache/Program_Counter.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/risc v with cache/Program_Counter.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Program_Counter
+
+Top level modules:
+	Program_Counter
+
+} {} {}}

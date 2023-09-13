@@ -1,0 +1,131 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vCache_array
+Z0 !s110 1694587389
+!i10b 1
+!s100 S50oEkc`?U1A2GcT0Sja;3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IBJE2<bOAjZnKZ2AB0P?>33
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dE:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/compile and run
+w1694572672
+8E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Cache_array.v
+FE:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Cache_array.v
+!i122 5
+L0 1 83
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1694587389.000000
+!s107 E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Cache_array.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Cache_array.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@cache_array
+vCaching_system
+R0
+!i10b 1
+!s100 kO>L_?bzeaVY15a:T2PF80
+R1
+I1fX2HCU_Jza^Zz2Nb5<@<3
+R2
+R3
+w1694520321
+8E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Caching_system.v
+FE:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Caching_system.v
+!i122 6
+L0 1 67
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Caching_system.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Caching_system.v|
+!i113 1
+R6
+R7
+n@caching_system
+vCaching_system_tb
+Z8 !s110 1694587390
+!i10b 1
+!s100 ]d0bkkDH5B15z>ePQFh;G3
+R1
+IReG;m^:LWfa]K:eL`HMHl0
+R2
+R3
+w1694587366
+8E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Caching_system_tb.v
+FE:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Caching_system_tb.v
+!i122 7
+L0 2 219
+R4
+r1
+!s85 0
+31
+Z9 !s108 1694587390.000000
+!s107 E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Caching_system_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Caching_system_tb.v|
+!i113 1
+R6
+R7
+n@caching_system_tb
+vFSM
+R8
+!i10b 1
+!s100 EgLlbc=eZ5@ljMjPRdJ7k1
+R1
+ImV7MS5_c8^fkTkN3h]fRf1
+R2
+R3
+w1694571500
+8E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/FSM.v
+FE:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/FSM.v
+!i122 8
+L0 1 160
+R4
+r1
+!s85 0
+31
+R9
+!s107 E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/FSM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/FSM.v|
+!i113 1
+R6
+R7
+n@f@s@m
+vMain_Memory
+R8
+!i10b 1
+!s100 lc^h]H7_@gXlMHAHZeQQ90
+R1
+IJ2h7NTOJReT7=h5f6Xbnf2
+R2
+R3
+w1694570777
+8E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Main_Memory.v
+FE:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Main_Memory.v
+!i122 9
+L0 1 52
+R4
+r1
+!s85 0
+31
+R9
+!s107 E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Main_Memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Main_Memory.v|
+!i113 1
+R6
+R7
+n@main_@memory

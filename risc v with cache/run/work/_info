@@ -1,0 +1,443 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vAdder
+!s110 1694572716
+!i10b 1
+!s100 WCOJHLEZo>l1Ke<AE6M2D1
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I0DzEY3j42R4I<>lFmUPzd0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dE:/courses/ITI/Verilog project/risc v with cache/run
+w1692228498
+8E:/courses/ITI/Verilog project/risc v with cache/Adder.v
+FE:/courses/ITI/Verilog project/risc v with cache/Adder.v
+!i122 646
+L0 1 10
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1694572716.000000
+!s107 E:/courses/ITI/Verilog project/risc v with cache/Adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/Adder.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@adder
+vALU
+Z6 !s110 1694572717
+!i10b 1
+!s100 lY?oo3Y9U9g:0mIo6C87U1
+R0
+ISg]7I]5d4HfTMMW1J2=nG1
+R1
+R2
+w1692230331
+8E:/courses/ITI/Verilog project/risc v with cache/ALU.v
+FE:/courses/ITI/Verilog project/risc v with cache/ALU.v
+!i122 647
+L0 1 26
+R3
+r1
+!s85 0
+31
+Z7 !s108 1694572717.000000
+!s107 E:/courses/ITI/Verilog project/risc v with cache/ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/ALU.v|
+!i113 1
+R4
+R5
+n@a@l@u
+vALU_Decoder
+R6
+!i10b 1
+!s100 9k?dQ64mD2NoS:l2dSBnM1
+R0
+IVM3<`9_hNn3>[nKknQ@XX2
+R1
+R2
+w1692237315
+8E:/courses/ITI/Verilog project/risc v with cache/ALU_Decoder.v
+FE:/courses/ITI/Verilog project/risc v with cache/ALU_Decoder.v
+!i122 648
+Z8 L0 1 29
+R3
+r1
+!s85 0
+31
+R7
+!s107 E:/courses/ITI/Verilog project/risc v with cache/ALU_Decoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/ALU_Decoder.v|
+!i113 1
+R4
+R5
+n@a@l@u_@decoder
+vCache_array
+Z9 !s110 1694572724
+!i10b 1
+!s100 S50oEkc`?U1A2GcT0Sja;3
+R0
+In:VgoASlOSL9jY?nhWSJ92
+R1
+R2
+w1694572672
+8E:/courses/ITI/Verilog project/risc v with cache/Cache_array.v
+FE:/courses/ITI/Verilog project/risc v with cache/Cache_array.v
+!i122 664
+L0 1 83
+R3
+r1
+!s85 0
+31
+!s108 1694572723.000000
+!s107 E:/courses/ITI/Verilog project/risc v with cache/Cache_array.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/Cache_array.v|
+!i113 1
+R4
+R5
+n@cache_array
+vCaching_system
+R9
+!i10b 1
+!s100 kO>L_?bzeaVY15a:T2PF80
+R0
+IDOR<`H0G^U@l[fzkJS3[C3
+R1
+R2
+w1694520321
+8E:/courses/ITI/Verilog project/risc v with cache/Caching_system.v
+FE:/courses/ITI/Verilog project/risc v with cache/Caching_system.v
+!i122 665
+L0 1 67
+R3
+r1
+!s85 0
+31
+Z10 !s108 1694572724.000000
+!s107 E:/courses/ITI/Verilog project/risc v with cache/Caching_system.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/Caching_system.v|
+!i113 1
+R4
+R5
+n@caching_system
+vControl_Unit
+Z11 !s110 1694572725
+!i10b 1
+!s100 <i;O?8lJVmhVEZ5;clM[k0
+R0
+I3cJRihTTHj`IQW:g?`eST1
+R1
+R2
+w1694555714
+8E:/courses/ITI/Verilog project/risc v with cache/Control_Unit.v
+FE:/courses/ITI/Verilog project/risc v with cache/Control_Unit.v
+!i122 666
+L0 1 42
+R3
+r1
+!s85 0
+31
+R10
+!s107 E:/courses/ITI/Verilog project/risc v with cache/Control_Unit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/Control_Unit.v|
+!i113 1
+R4
+R5
+n@control_@unit
+vData_Memory
+R11
+!i10b 1
+!s100 IkIdOK;DH`@;dSm6TgIZK2
+R0
+I>>i4IQe4kaimgQI18INd<0
+R1
+R2
+w1692253888
+8E:/courses/ITI/Verilog project/risc v with cache/Data_Memory.v
+FE:/courses/ITI/Verilog project/risc v with cache/Data_Memory.v
+!i122 667
+L0 1 38
+R3
+r1
+!s85 0
+31
+Z12 !s108 1694572725.000000
+!s107 E:/courses/ITI/Verilog project/risc v with cache/Data_Memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/Data_Memory.v|
+!i113 1
+R4
+R5
+n@data_@memory
+vFSM
+R11
+!i10b 1
+!s100 EgLlbc=eZ5@ljMjPRdJ7k1
+R0
+IM2N7Th0zXzUOiI3nJonc02
+R1
+R2
+w1694571500
+8E:/courses/ITI/Verilog project/risc v with cache/FSM.v
+FE:/courses/ITI/Verilog project/risc v with cache/FSM.v
+!i122 668
+L0 1 160
+R3
+r1
+!s85 0
+31
+R12
+!s107 E:/courses/ITI/Verilog project/risc v with cache/FSM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/FSM.v|
+!i113 1
+R4
+R5
+n@f@s@m
+vInstruction_Memory
+Z13 !s110 1694572726
+!i10b 1
+!s100 nXY;3;QV[^O?_K_[XUb?Q1
+R0
+IIHKjS_:JC;o6o=mfIPm>f0
+R1
+R2
+w1692259476
+8E:/courses/ITI/Verilog project/risc v with cache/Instruction_Memory.v
+FE:/courses/ITI/Verilog project/risc v with cache/Instruction_Memory.v
+!i122 669
+Z14 L0 1 19
+R3
+r1
+!s85 0
+31
+Z15 !s108 1694572726.000000
+!s107 E:/courses/ITI/Verilog project/risc v with cache/Instruction_Memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/Instruction_Memory.v|
+!i113 1
+R4
+R5
+n@instruction_@memory
+vMain_Decoder
+R13
+!i10b 1
+!s100 j2ghjQngM;a]MZo=z[Gzh2
+R0
+IVIIL1BHZC6QRGBLT6Ue4G1
+R1
+R2
+w1694555747
+8E:/courses/ITI/Verilog project/risc v with cache/Main_Decoder.v
+FE:/courses/ITI/Verilog project/risc v with cache/Main_Decoder.v
+!i122 670
+L0 1 104
+R3
+r1
+!s85 0
+31
+R15
+!s107 E:/courses/ITI/Verilog project/risc v with cache/Main_Decoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/Main_Decoder.v|
+!i113 1
+R4
+R5
+n@main_@decoder
+vMain_Memory
+Z16 !s110 1694572727
+!i10b 1
+!s100 lc^h]H7_@gXlMHAHZeQQ90
+R0
+IZY]Blm=k[3E>7laKMGS2U1
+R1
+R2
+w1694570777
+8E:/courses/ITI/Verilog project/risc v with cache/Main_Memory.v
+FE:/courses/ITI/Verilog project/risc v with cache/Main_Memory.v
+!i122 671
+L0 1 52
+R3
+r1
+!s85 0
+31
+R15
+!s107 E:/courses/ITI/Verilog project/risc v with cache/Main_Memory.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/Main_Memory.v|
+!i113 1
+R4
+R5
+n@main_@memory
+vMUX_2_to_1
+R16
+!i10b 1
+!s100 Q2P1K`=FeBz0]bY=1i_B@0
+R0
+I3B20KiHJ0[1;oie`[LQ731
+R1
+R2
+w1692228267
+8E:/courses/ITI/Verilog project/risc v with cache/MUX_2_to_1 .v
+FE:/courses/ITI/Verilog project/risc v with cache/MUX_2_to_1 .v
+!i122 672
+R14
+R3
+r1
+!s85 0
+31
+Z17 !s108 1694572727.000000
+!s107 E:/courses/ITI/Verilog project/risc v with cache/MUX_2_to_1 .v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/MUX_2_to_1 .v|
+!i113 1
+R4
+R5
+n@m@u@x_2_to_1
+vMUX_4_to_1
+Z18 !s110 1694572728
+!i10b 1
+!s100 TfCXOMjJjA:=7ZnXh:l1K0
+R0
+Izmkhj6nQ6WQVFPUiSRTf`3
+R1
+R2
+w1692237455
+8E:/courses/ITI/Verilog project/risc v with cache/MUX_4_to_1.v
+FE:/courses/ITI/Verilog project/risc v with cache/MUX_4_to_1.v
+!i122 673
+Z19 L0 1 27
+R3
+r1
+!s85 0
+31
+R17
+!s107 E:/courses/ITI/Verilog project/risc v with cache/MUX_4_to_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/MUX_4_to_1.v|
+!i113 1
+R4
+R5
+n@m@u@x_4_to_1
+vProgram_Counter
+R18
+!i10b 1
+!s100 nNm;Uo1@baXI486WlM8e[1
+R0
+I8bFhIPQ2lTUY;LE^17ETI1
+R1
+R2
+w1694570142
+8E:/courses/ITI/Verilog project/risc v with cache/Program_Counter.v
+FE:/courses/ITI/Verilog project/risc v with cache/Program_Counter.v
+!i122 674
+R19
+R3
+r1
+!s85 0
+31
+!s108 1694572728.000000
+!s107 E:/courses/ITI/Verilog project/risc v with cache/Program_Counter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/Program_Counter.v|
+!i113 1
+R4
+R5
+n@program_@counter
+vRegister_File
+!s110 1694572729
+!i10b 1
+!s100 4c_m;`8Q3NNK=gEPcJgM82
+R0
+I7DhUz<<Ha?j7CL`b6Umzn3
+R1
+R2
+w1692237838
+8E:/courses/ITI/Verilog project/risc v with cache/Register_File.v
+FE:/courses/ITI/Verilog project/risc v with cache/Register_File.v
+!i122 675
+L0 1 39
+R3
+r1
+!s85 0
+31
+Z20 !s108 1694572729.000000
+!s107 E:/courses/ITI/Verilog project/risc v with cache/Register_File.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/Register_File.v|
+!i113 1
+R4
+R5
+n@register_@file
+vRICS_V_tb
+Z21 !s110 1694572730
+!i10b 1
+!s100 S0:YTR502=Gm1523dGAUG2
+R0
+I2]YI_bNLVOi4B5eBTYLjG3
+R1
+R2
+w1694556302
+8E:/courses/ITI/Verilog project/risc v with cache/RICS_V_tb.v
+FE:/courses/ITI/Verilog project/risc v with cache/RICS_V_tb.v
+!i122 676
+L0 3 42
+R3
+r1
+!s85 0
+31
+R20
+!s107 E:/courses/ITI/Verilog project/risc v with cache/RICS_V_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/RICS_V_tb.v|
+!i113 1
+R4
+R5
+n@r@i@c@s_@v_tb
+vRISC_V_TOP
+R21
+!i10b 1
+!s100 a;Rd]HE6MF[dbGg]:okD60
+R0
+IbTAmeQl]zI;C2]Mlkm15`0
+R1
+R2
+w1694555922
+8E:/courses/ITI/Verilog project/risc v with cache/RISC_V_TOP.v
+FE:/courses/ITI/Verilog project/risc v with cache/RISC_V_TOP.v
+!i122 677
+L0 1 175
+R3
+r1
+!s85 0
+31
+Z22 !s108 1694572730.000000
+!s107 E:/courses/ITI/Verilog project/risc v with cache/RISC_V_TOP.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/RISC_V_TOP.v|
+!i113 1
+R4
+R5
+n@r@i@s@c_@v_@t@o@p
+vSign_Extend
+R21
+!i10b 1
+!s100 ]98lQ>_^KG]B?ke:<c4aW3
+R0
+Ii>c@<V=ldJE178Q`nHEk?0
+R1
+R2
+w1692252891
+8E:/courses/ITI/Verilog project/risc v with cache/Sign_Extend.v
+FE:/courses/ITI/Verilog project/risc v with cache/Sign_Extend.v
+!i122 678
+R8
+R3
+r1
+!s85 0
+31
+R22
+!s107 E:/courses/ITI/Verilog project/risc v with cache/Sign_Extend.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/courses/ITI/Verilog project/risc v with cache/Sign_Extend.v|
+!i113 1
+R4
+R5
+n@sign_@extend

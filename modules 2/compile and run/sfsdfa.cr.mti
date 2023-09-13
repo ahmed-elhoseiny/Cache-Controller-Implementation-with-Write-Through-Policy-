@@ -1,0 +1,29 @@
+{E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/FSM.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/FSM.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FSM
+
+Top level modules:
+	FSM
+
+} {} {}} {E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Cache_array.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Cache_array.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Cache_array
+
+Top level modules:
+	Cache_array
+
+} {} {}} {E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Main_Memory.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Main_Memory.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Main_Memory
+
+Top level modules:
+	Main_Memory
+
+} {} {}} {E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Caching_system.v} {1 {vlog -work work -stats=none {E:/courses/ITI/Verilog project/Cache-Controller-Implementation-with-Write-Through-Policy-/modules 2/Caching_system.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Caching_system
+
+Top level modules:
+	Caching_system
+
+} {} {}}
